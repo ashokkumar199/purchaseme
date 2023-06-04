@@ -40,8 +40,8 @@ function AppFooter() {
         </div>
 
         <div className="row">
-          PURCHASE ME Copyright © 2023 Inferno - All rights reserved || Designed
-          By: Ashok
+          PURCHASE ME Copyright © 2023 Purchase me - All rights reserved ||
+          Designed By: Ashok
         </div>
       </div>
     </footer>
