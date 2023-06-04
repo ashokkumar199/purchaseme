@@ -1,0 +1,19 @@
+.categoryContainer {
+  margin-top: var(--margin-500);
+  .categoryListContainer {
+    padding: 0.5rem calc(var(--main-padding-hl) - var(--margin-500)) 0.8rem
+      var(--main-padding-hl);
+    display: flex;
+    overflow: scroll;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .categoryContainer {
+    margin-top: var(--margin-200);
+    .categoryListContainer {
+      padding: 0.2rem calc(var(--main-padding-hl) - var(--margin-400)) 0.8rem
+        var(--main-padding-hl);
+    }
+  }
+}

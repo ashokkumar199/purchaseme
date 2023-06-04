@@ -1,0 +1,27 @@
+.allProductContainer {
+  margin-top: var(--margin-500);
+  .productMainContainer {
+    padding: 0.5rem calc(var(--main-padding-hl) - var(--margin-500)) 0.8rem
+      var(--main-padding-hl);
+    display: flex;
+    overflow: scroll;
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .allProductContainer {
+    margin-top: var(--margin-200);
+    .productMainContainer {
+      padding: 0.2rem calc(var(--main-padding-hl) - var(--margin-400)) 0.8rem
+        var(--main-padding-hl);
+      .productCardContainer {
+        margin-right: 8% !important;
+        width: 42% !important;
+        .card {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+}

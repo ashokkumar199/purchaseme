@@ -1,11 +1,15 @@
 @font-face {
   font-family: "Montserrat";
-  src: url("./assets/fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf");
+  src: url("./assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
   font-style: normal;
   font-weight: 100 1000;
   font-display: swap;
 }
+
 :root {
+  --main-padding-hl: clamp(5rem, 1vw + 1rem, 8rem);
+  --main-padding-vl: 1rem;
+
   --bw-100: 0.2rem;
   --bw-200: 0.4rem;
   --bw-300: 0.6rem;
@@ -50,11 +54,12 @@
   --clr-primary-200: #62579c;
   --clr-primary-300: #7b6dbf;
   --clr-primary-400: #8879d1;
-  --clr-primary-900: #9e8eed;
+  --clr-primary-500: #9384de;
+  --clr-primary-900: #c5bbf7;
   --clr-w-grace-100: #ffffff;
-  --clr-w-grace-200: #e9e6f7;
-  --clr-w-grace-300: #e6e1fc;
-  --clr-w-grace-400: #e1e2e7;
+  --clr-w-grace-200: #e2e9f4;
+  --clr-w-grace-300: #c8d8e7;
+  --clr-w-grace-400: #e6e1fc;
   --clr-w-grace-500: #d9d9d9;
   --clr-w-grace-600: #fffcfa;
   --clr-b-grace-100: #000000;
@@ -68,8 +73,7 @@
   ---fs-700: clamp(1.445rem, 2.2vw + 1.24rem, 2rem);
   ---fs-800: clamp(1.8rem, 2.8vw + 1.4rem, 2.545rem);
   ---fs-900: clamp(2.5rem, 3vw + 2rem, 3.5rem);
-  --main-padding-hl: 8.5rem;
-  --main-padding-vl: 1rem;
+
   --border-width: 0.1rem;
   --active-color: var(--clr-primary-200);
   ---comp-height: clamp(2.8rem, (3vw + 0.5rem), 3rem);
@@ -84,18 +88,17 @@
   --inactive-border: var(--border-width) solid var(--clr-w-grace-400);
   --hover-border: var(--border-width) solid var(--clr-primary-100);
   --input-font-size: clamp(0.8rem, 2vw, 1rem);
-  ---item-card-height: clamp(16rem, (20vw + 1rem), 18rem);
+  ---item-card-height: clamp(7rem, (20vw + 1rem), 13rem);
   ---item-card-width: clamp(10rem, (12vw + 1rem), 12rem);
   ---product-card-height: clamp(10rem, (10vw + 1rem), 12rem);
-  ---product-card-width: clamp(10rem, (10vw + 1rem), 12rem);
+  ---product-card-width: clamp(13rem, (8vw + 1rem), 15rem);
   ---item-full-image-height: clamp(75vh, 40vw + 1rem, 80vh);
   ---item-full-image-width: clamp(20rem, 20vw + 1rem, 25rem);
-  ---share-image-width: clamp(6rem, (6vw + 1rem), 7rem);
+  ---category-image-width: clamp(2rem, (1vw + 1rem), 3rem);
 }
-
 @media only screen and (max-width: 800px) {
   :root {
-    ---fs-300: clamp(0.6rem, 1vw + 0.5rem, 0.7rem);
+    ---fs-300: clamp(0.5rem, 1vw + 0.5rem, 0.6rem);
     ---fs-400: clamp(0.65rem, 1vw + 0.6rem, 0.8rem);
     ---fs-500: clamp(0.75rem, 1.15vw + 0.623rem, 0.98rem);
     ---fs-600: clamp(1rem, 1.5vw + 0.87rem, 1.2rem);
@@ -112,8 +115,8 @@
 }
 @media only screen and (max-width: 800px) {
   :root {
-    --main-padding-hl: 2.5rem;
-    --main-padding-vl: 0.5rem;
+    --main-padding-hl: 1.5rem;
+    --main-padding-vl: 1rem;
   }
 }
 @media only screen and (max-width: 1000px) {
@@ -128,61 +131,72 @@
 }
 @media only screen and (max-width: 1000px) {
   :root {
-    ---item-card-height: clamp(13rem, 17vw + 1rem, 15rem);
+    ---item-card-height: clamp(8rem, 17vw + 1rem, 10rem);
     ---item-card-width: clamp(9rem, 8vw + 1rem, 11rem);
     ---product-card-height: clamp(7rem, 7vw + 1rem, 9rem);
-    ---product-card-width: clamp(7rem, 7vw + 1rem, 9rem);
+    ---product-card-width: clamp(15rem, (10vw + 1rem), 18rem);
     ---item-full-image-height: clamp(40vh, 30vw + 1rem, 45vh);
     ---item-full-image-width: 100%;
-    ---share-image-width: clamp(4rem, (4vw + 1rem), 5rem);
+    ---category-image-width: clamp(2rem, (1vw + 1rem), 3rem);
   }
 }
 @media only screen and (max-width: 800px) {
   :root {
-    ---item-card-height: clamp(9rem, 12vw + 1rem, 11rem);
+    ---item-card-height: clamp(7rem, 12vw + 1rem, 9rem);
     ---item-card-width: clamp(7rem, 6vw + 1rem, 9rem);
     ---product-card-height: clamp(5.5rem, 6vw + 1rem, 7rem);
-    ---product-card-width: clamp(5.5rem, 6vw + 1rem, 7rem);
+    ---product-card-width: clamp(12rem, 6vw + 1rem, 15rem);
     ---item-full-image-height: clamp(35vh, 25vw + 1rem, 40vh);
     ---item-full-image-width: 100%;
-    ---share-image-width: clamp(2.5rem, (2.5vw + 0.6rem), 3rem);
+    ---category-image-width: clamp(1.5rem, (1vw + 0.6rem), 2.5rem);
   }
 }
+
 * {
   margin: 0;
   padding: 0;
   outline: 0;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   border: 0;
   text-decoration: none;
+  -webkit-font-smoothing: antialiased;
   list-style: none;
   box-sizing: border-box;
   transition: all 300ms ease;
   animation: transitionIn 0.7s;
-}
-@keyframes transitionIn {
-  from {
-    opacity: 0;
-    transform: translateY(3%);
+  @keyframes transitionIn {
+    from {
+      opacity: 0;
+      transform: translateY(3%);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  ::-webkit-scrollbar {
+    width: 0.25rem;
+    background-color: transparent;
+    cursor: pointer;
+    height: 0rem;
   }
-}
-* ::-webkit-scrollbar {
-  width: 0.25rem;
-  background-color: transparent;
-  cursor: pointer;
-}
-* ::-webkit-scrollbar-thumb {
-  background-color: var(--clr-w-grace-500);
-  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
-}
-* ::-webkit-scrollbar-thumb :hover {
-  background-color: var(--clr-b-grace-300);
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--clr-w-grace-500);
+    background-image: -webkit-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.2) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(255, 255, 255, 0.2) 50%,
+      rgba(255, 255, 255, 0.2) 75%,
+      transparent 75%,
+      transparent
+    );
+    :hover {
+      background-color: var(--clr-b-grace-300);
+    }
+  }
 }
 
 html {
@@ -195,9 +209,7 @@ body {
   height: 100vh;
   font-family: "Montserrat";
   background-color: var(--clr-w-grace-100);
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
   overflow-x: hidden;
 }
 
@@ -211,12 +223,39 @@ button {
   cursor: pointer;
 }
 
+.numberOfLineOne {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* number of lines to show */
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.numberOfLineTwo {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.numberOfLineThree {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.numberOfLineFour {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* number of lines to show */
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
 input {
   font-size: var(---fs-400);
+  ::placeholder {
+    color: var(--clr-w-grace-600);
+  }
 }
-input ::-moz-placeholder {
-  color: var(--clr-w-grace-600);
-}
-input ::placeholder {
-  color: var(--clr-w-grace-600);
-}/*# sourceMappingURL=index.css.map */
