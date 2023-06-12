@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# PurchaseMe
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a sample website that demonstrates an E-commerce website using the HTML,CSS,ReactJs. The Website loads products with a dummy API and displays them. Users can select to display products in a single category. Users can click on any categories to view according to the particular category along with the search function.
 
-## Available Scripts
+## Screenshots
 
-In the project directory, you can run:
+**HomePage**
 
-### `npm start`
+<img width="1440" alt="Screenshot 2023-06-12 at 11 25 31 AM" src="https://github.com/ashokkumar199/purchaseme/assets/52505398/d83ca068-4a5f-4f7f-a7a4-1ab08bccc381">
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**All Categories**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<img width="1440" alt="Screenshot 2023-06-12 at 11 26 20 AM" src="https://github.com/ashokkumar199/purchaseme/assets/52505398/dde024a9-287d-4c74-8733-c48042115951">
 
-### `npm test`
+**Selecting the categories for men**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<img width="1440" alt="Screenshot 2023-06-12 at 11 26 51 AM" src="https://github.com/ashokkumar199/purchaseme/assets/52505398/44fabb55-033b-4484-b9cb-be4854983092">
 
-### `npm run build`
+**See All Products**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<img width="1440" alt="Screenshot 2023-06-12 at 11 27 15 AM" src="https://github.com/ashokkumar199/purchaseme/assets/52505398/05abe272-0578-44b1-bc9d-8e926d6ff75c">
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Searching the products for men**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<img width="1440" alt="Screenshot 2023-06-12 at 11 27 50 AM" src="https://github.com/ashokkumar199/purchaseme/assets/52505398/da0e11e8-b8a3-46ee-818f-2c7b12fa0758">
 
-### `npm run eject`
+### Getting Started
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To get started you can simply clone this ```purchaseme``` repository and install the dependencies.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Clone the ```purchaseme``` repository using git:
+```
+git clone https://github.com/ashokkumar199/purchaseme
+cd purchaseme
+```
+Install dependencies with this command:
+```
+npm install
+```
+Run the application with this command:
+```
+npm start
+```
+#### Tech Stack
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+HTML
+CSS
+REACTJS
